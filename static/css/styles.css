@@ -1,0 +1,17 @@
+.navbar{
+    height:80px;
+}
+
+.about {
+    height: 600px;
+    width: 100%;
+    background-color: #333;
+}
+
+.about h1{
+    color:#fff;
+}
+
+.color-page{
+    color:#111;
+}

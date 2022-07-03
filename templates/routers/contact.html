@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}Contact{% endblock %}
+{% block contant %}
+    <div class="about text-center pt-5">
+        <h1>Contact</h1>
+        <div class="container bg-primary">
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ p_form|crispy }}
+                <div class="text-center">
+                    <button type="submit" class="btn-1" name="submit_p_form">Send Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

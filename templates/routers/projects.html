@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block title %}Projects{% endblock %}
+{% block contant %}
+    <div class="about text-center pt-5">
+        <h1>Projects</h1>
+        <div class="color-page">
+            <div class="container">
+                <div class="row">
+                    {% for form in s_form %}
+                        <div class="col-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ form.name }}</h5>
+                                    <p class="card-text">{{ form.discriptions }}</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
